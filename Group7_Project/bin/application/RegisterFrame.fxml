@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterFrameController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="360.0" layoutY="152.0" prefHeight="900.0" prefWidth="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="300.0" prefWidth="500.0">
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="註冊" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="300.0" prefWidth="100.0" style="-fx-background-color: #3A785B;">
+               <children>
+                  <VBox maxWidth="-Infinity" prefHeight="300.0" prefWidth="400.0">
+                     <children>
+                        <GridPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="180.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="120.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="帳號：" textFill="#ffeab1">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label text="密碼：" textFill="#ffeab1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="accountField" maxWidth="-Infinity" prefWidth="270.0" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </TextField>
+                              <PasswordField fx:id="passwordField" maxWidth="-Infinity" prefWidth="270.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </PasswordField>
+                           </children>
+                        </GridPane>
+                        <GridPane prefHeight="100.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#shopBtn" prefWidth="120.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #D0D0D0;" text="商家">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#userBtn" prefWidth="120.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #D0D0D0;" text="一般人" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <ImageView fitHeight="300.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/22.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <ImageView fitHeight="300.0" fitWidth="500.0" layoutX="-100.0" layoutY="-75.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../picture/21.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,149 @@
+package application;
+
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import backEnd.Order;
+import backEnd.OrderItem;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableCell;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+
+public class ShopFrame3Controller {
+
+	@FXML
+	private TableView<OrderItem> tableView;
+	@FXML
+	private TableColumn<OrderItem, String> pickUpNumTable;
+	@FXML
+	private TableColumn<OrderItem, String> totalPriceTable;
+	@FXML
+	private TableColumn<OrderItem, OrderItem> stateBtnTable;
+
+	private Stage stage;
+	private Scene scene;
+
+	@FXML
+	public void frame1Btn(ActionEvent event) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("ShopFrame1.fxml"));
+		Parent root = loader.load();
+		ShopFrame1Controller shopFrameController = loader.getController();
+		shopFrameController.frame1Btn(event);
+		stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		stage.setScene(scene);
+	}
+
+	@FXML
+	public void frame2Btn(ActionEvent event) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("ShopFrame2.fxml"));
+		Parent root = loader.load();
+		ShopFrame2Controller shopFrame2Controller = loader.getController();
+		shopFrame2Controller.frame2Btn(event);
+		stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		stage.setScene(scene);
+	}
+
+	@FXML
+	public void frame3Btn(ActionEvent event) {
+
+		Order order = new Order();
+
+		ArrayList<OrderItem> orders = order.refreshInfo(SharedData.ID);
+
+		Iterator<OrderItem> iterator = orders.iterator();
+		while (iterator.hasNext()) {
+			OrderItem i = iterator.next();
+			if (!i.getState().equals("準備中") && !i.getState().equals("待取餐")) {
+				System.out.println("Delete: " + i.getPickUpNum() + ", " + i.getState());
+				iterator.remove();
+			}
+		}
+
+		pickUpNumTable.setCellValueFactory(new PropertyValueFactory<>("pickUpNum"));
+
+		totalPriceTable.setCellValueFactory(cellData -> {
+			SimpleStringProperty property = new SimpleStringProperty();
+			OrderItem item = cellData.getValue();
+
+			String result = "總金額: $ " + String.valueOf(item.getTotalPrice());
+
+			property.set(result);
+			return property;
+		});
+
+		stateBtnTable.setCellFactory(param -> new TableCell<OrderItem, OrderItem>() {
+			final Button btn = new Button("修改內容");
+
+			@Override
+			public void updateItem(OrderItem item, boolean empty) {
+				super.updateItem(item, empty);
+				if (empty) {
+					setGraphic(null);
+					setText(null);
+				} else {
+					btn.setOnAction(new EventHandler<ActionEvent>() {
+						@Override
+						public void handle(ActionEvent event) {
+							OrderItem item = getTableView().getItems().get(getIndex());
+
+							FXMLLoader loader = new FXMLLoader(getClass().getResource("ShopFrame9.fxml"));
+							Parent root;
+							try {
+								root = loader.load();
+								ShopFrame9Controller shopFrameController = loader.getController();
+								shopFrameController.initialize(item);
+
+								Stage newStage = new Stage();
+								newStage.setTitle("餐點內容修改");
+								newStage.setScene(new Scene(root));
+
+								shopFrameController.setStage(newStage);
+
+								newStage.initModality(Modality.APPLICATION_MODAL);
+								newStage.initOwner(((Node) event.getSource()).getScene().getWindow());
+
+								newStage.showAndWait();
+							} catch (IOException e) {
+								e.printStackTrace();
+							}
+						}
+					});
+					setGraphic(btn);
+					setText(null);
+				}
+			}
+		});
+
+		ObservableList<OrderItem> oData = FXCollections.observableArrayList(orders);
+		tableView.setItems(oData);
+	}
+
+	@FXML
+	public void frame4Btn(ActionEvent event) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("ShopFrame4.fxml"));
+		Parent root = loader.load();
+		ShopFrame4Controller shopFrameController = loader.getController();
+		shopFrameController.frame4Btn(event);
+		stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		stage.setScene(scene);
+	}
+}

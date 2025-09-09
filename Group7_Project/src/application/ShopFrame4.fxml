@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ShopFrame4Controller">
+   <children>
+     <ImageView fitHeight="200.0" fitWidth="550.0" layoutX="-86.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="750.0">
+			<image>
+				<Image url="@../picture/Background.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="750.0" fitWidth="500.0" layoutX="-100.0" layoutY="-75.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<image>
+				<Image url="@../picture/04.png" />
+			</image>
+		</ImageView>
+		<VBox layoutX="112.0" layoutY="442.0" prefHeight="150.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+			<children>
+				<GridPane prefHeight="150.0">
+					<columnConstraints>
+						<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+						<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+						<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+						<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+							<children>
+								<GridPane prefHeight="70.0" prefWidth="70.0">
+									<columnConstraints>
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../picture/Btn1.png" />
+											</image>
+										</ImageView>
+										<Button mnemonicParsing="false" onAction="#frame1Btn" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" />
+									</children>
+								</GridPane>
+								<VBox prefHeight="10.0" prefWidth="100.0" />
+								<Label text="菜單設定" textFill="#ffecaf">
+									<font>
+										<Font name="Al Bayan Bold" size="18.0" />
+									</font>
+								</Label>
+							</children>
+						</VBox>
+						<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+							<children>
+								<GridPane prefHeight="70.0" prefWidth="70.0">
+									<columnConstraints>
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<ImageView fitHeight="80.0" fitWidth="80.0" onMouseClicked="#frame2Btn" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../picture/Btn2.png" />
+											</image>
+										</ImageView>
+										<Button mnemonicParsing="false" onAction="#frame2Btn" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" />
+									</children>
+								</GridPane>
+								<VBox prefHeight="10.0" prefWidth="100.0" />
+								<Label text="訂單狀態" textFill="#ffecaf">
+									<font>
+										<Font name="Al Bayan Bold" size="18.0" />
+									</font>
+								</Label>
+							</children>
+						</VBox>
+						<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+							<children>
+								<GridPane prefHeight="70.0" prefWidth="70.0">
+									<columnConstraints>
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../picture/Btn3.png" />
+											</image>
+										</ImageView>
+										<Button mnemonicParsing="false" onAction="#frame3Btn" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" />
+									</children>
+								</GridPane>
+								<VBox prefHeight="10.0" prefWidth="100.0" />
+								<Label text="取餐" textFill="#ffecaf">
+									<font>
+										<Font name="Al Bayan Bold" size="18.0" />
+									</font>
+								</Label>
+							</children>
+						</VBox>
+						<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
+							<children>
+								<GridPane prefHeight="70.0" prefWidth="70.0">
+									<columnConstraints>
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../picture/Btn4.png" />
+											</image>
+										</ImageView>
+      										<Button mnemonicParsing="false" onAction="#frame4Btn" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" />
+									</children>
+								</GridPane>
+								<VBox prefHeight="10.0" prefWidth="100.0" />
+								<Label text="商家資料" textFill="#ffecaf">
+									<font>
+										<Font name="Al Bayan Bold" size="18.0" />
+									</font>
+								</Label>
+							</children>
+						</VBox>
+					</children>
+				</GridPane>
+			</children>
+		</VBox>
+      <VBox alignment="TOP_CENTER" layoutX="243.0" layoutY="208.0" prefHeight="700.0" prefWidth="100.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="80.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="TOP_CENTER" text="商店名稱：">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="userNameLabel" alignment="TOP_CENTER" text="???">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="10.0" prefWidth="100.0" />
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#setShopInfoBtn" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #E0E0E0;" text="商家資料維護" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="10.0" prefWidth="100.0" />
+            <VBox alignment="CENTER_LEFT" prefHeight="180.0" prefWidth="100.0" style="-fx-border-color: #272727; -fx-background-color: #FFFFFF;">
+               <children>
+                  <Label text="  帳號狀態：">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <GridPane prefHeight="100.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#shopSwitchBtn" style="-fx-background-radius: 150; -fx-min-width: 130; -fx-min-height: 40; -fx-max-width: 140; -fx-max-height: 60;" text="商家" textAlignment="CENTER" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#leftoverFoodSwitchBtn" style="-fx-background-radius: 150; -fx-min-width: 130; -fx-min-height: 40; -fx-max-width: 140; -fx-max-height: 60;" text="剩食" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="20.0" prefWidth="100.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="300.0" prefWidth="100.0">
+               <children>
+                  <GridPane prefHeight="300.0" style="-fx-border-color: #D0D0D0; -fx-background-color: #FFFFFF;">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="140.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="未取餐次數">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="營業星期" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="營業時間" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="notPickTimeLabel" text="無" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="workingWeekLabel" text="無" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="workngTimeLabel" text="無" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="開放預約時間" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="目前營業狀態" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="operatingTimeLabel" text="無" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nowWorkingStateLabel" text="無" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserFrame5Controller">
+	<children>
+	<ImageView fitHeight="200.0" fitWidth="550.0" layoutX="-86.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="750.0">
+			<image>
+				<Image url="@../picture/Background.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="750.0" fitWidth="500.0" layoutX="-100.0" layoutY="-75.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<image>
+				<Image url="@../picture/04.png" />
+			</image>
+		</ImageView>
+				<VBox layoutX="112.0" layoutY="442.0" prefHeight="150.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+			<children>
+				<GridPane prefHeight="150.0">
+					<columnConstraints>
+						<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+						<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+						<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+						<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+							<children>
+								<GridPane prefHeight="70.0" prefWidth="70.0">
+									<columnConstraints>
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../picture/Btn1.png" />
+											</image>
+										</ImageView>
+      										<Button mnemonicParsing="false" onAction="#frame1Btn" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" />
+									</children>
+								</GridPane>
+								<VBox prefHeight="10.0" prefWidth="100.0" />
+								<Label text="找餐廳" textFill="#ffecaf">
+									<font>
+										<Font name="Al Bayan Bold" size="18.0" />
+									</font>
+								</Label>
+							</children>
+						</VBox>
+						<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+							<children>
+								<GridPane prefHeight="70.0" prefWidth="70.0">
+									<columnConstraints>
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../picture/Btn2.png" />
+											</image>
+										</ImageView>
+										<Button mnemonicParsing="false" onAction="#frame2Btn" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" />
+									</children>
+								</GridPane>
+								<VBox prefHeight="10.0" prefWidth="100.0" />
+								<Label text="訂單狀態" textFill="#ffecaf">
+									<font>
+										<Font name="Al Bayan Bold" size="18.0" />
+									</font>
+								</Label>
+							</children>
+						</VBox>
+						<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+							<children>
+								<GridPane prefHeight="70.0" prefWidth="70.0">
+									<columnConstraints>
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../picture/Btn3.png" />
+											</image>
+										</ImageView>
+										<Button mnemonicParsing="false" onAction="#frame3Btn" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" />
+									</children>
+								</GridPane>
+								<VBox prefHeight="10.0" prefWidth="100.0" />
+								<Label text="建立剩食" textFill="#ffecaf">
+									<font>
+										<Font name="Al Bayan Bold" size="18.0" />
+									</font>
+								</Label>
+							</children>
+						</VBox>
+						<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
+							<children>
+								<GridPane prefHeight="70.0" prefWidth="70.0">
+									<columnConstraints>
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../picture/Btn4.png" />
+											</image>
+										</ImageView>
+										<Button mnemonicParsing="false" onAction="#frame4Btn" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" />
+									</children>
+								</GridPane>
+								<VBox prefHeight="10.0" prefWidth="100.0" />
+								<Label text="個人資料" textFill="#ffecaf">
+									<font>
+										<Font name="Al Bayan Bold" size="18.0" />
+									</font>
+								</Label>
+							</children>
+						</VBox>
+					</children>
+				</GridPane>
+			</children>
+		</VBox>
+		<VBox layoutX="118.0" layoutY="148.0" prefHeight="700.0" prefWidth="100.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="25.0">
+			<children>
+				<VBox prefHeight="80.0" prefWidth="100.0">
+					<children>
+						<GridPane prefHeight="80.0">
+							<columnConstraints>
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="80.0" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="80.0" />
+							</columnConstraints>
+							<rowConstraints>
+								<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+							</rowConstraints>
+							<children>
+								<Label fx:id="shopNameLabel" text="餐廳名稱" GridPane.columnIndex="1">
+									<font>
+										<Font size="30.0" />
+									</font>
+								</Label>
+                        <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../picture/07.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../picture/09.png" />
+                           </image>
+                        </ImageView>
+								<Button mnemonicParsing="false" onAction="#backPageBtn" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: transparent;" />
+								<Button mnemonicParsing="false" onAction="#shopcartBtn" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" />
+							</children>
+						</GridPane>
+					</children>
+				</VBox>
+				<VBox prefHeight="20.0" prefWidth="100.0" />
+				<TableView fx:id="tableView" prefHeight="500.0" prefWidth="200.0">
+					<columns>
+						<TableColumn fx:id="mealNameTable" prefWidth="100.0" text="餐點名稱" />
+						<TableColumn fx:id="unitAndUnitPriceTable" prefWidth="75.0" text="單價/單位" />
+						<TableColumn fx:id="quanTable" prefWidth="100.0" text="數量" />
+						<TableColumn fx:id="totalPriceTable" prefWidth="75.0" text="價格" />
+						<TableColumn fx:id="orderCheckBtnTable" prefWidth="70.0" text="預定" />
+					</columns>
+				</TableView>
+				<VBox prefHeight="20.0" prefWidth="100.0" />
+				<GridPane prefHeight="80.0">
+					<columnConstraints>
+						<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+						<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+                  <ImageView fitHeight="70.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/10.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../picture/11.png" />
+                     </image>
+                  </ImageView>
+						<Button mnemonicParsing="false" onAction="#checkBtn" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+							<font>
+								<Font size="20.0" />
+							</font>
+						</Button>
+						<Button mnemonicParsing="false" onAction="#straightCheckBtn" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1">
+							<font>
+								<Font size="20.0" />
+							</font>
+						</Button>
+					</children>
+				</GridPane>
+			</children>
+		</VBox>
+	</children>
+</AnchorPane>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserFrame8Controller">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="480.0" layoutX="-23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../picture/04.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="28.0" layoutY="82.0" prefHeight="650.0" prefWidth="400.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <GridPane gridLinesVisible="true" prefHeight="200.0" style="-fx-border-color: #4F4F4F; -fx-background-color: #FFFFFF;">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="180.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="110.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="110.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="餐點名稱">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="數量" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="價格" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderMeal1Label" text="餐點1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderMeal2Label" text="餐點2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderMeal3Label" text="餐點3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderMeal1QuanLabel" text="數量1" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderMeal2QuanLabel" text="數量2" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderMeal3QuanLabel" text="數量3" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderMeal1PriceLabel" text="價格1" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderMeal2PriceLabel" text="價格2" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderMeal3PriceLabel" text="價格3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Italic" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <VBox prefHeight="20.0" prefWidth="100.0" />
+            <GridPane prefHeight="50.0" style="-fx-border-color: #4F4F4F; -fx-background-color: #3C3C3C;">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefWidth="200.0">
+                     <children>
+                        <Label text="  總餐點數量：" textFill="#f0f0f0">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalQuanLabel" textFill="#f0f0f0">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="   總金額：" textFill="#f0f0f0">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalPeiceLabel" textFill="#f0f0f0">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <VBox prefHeight="20.0" prefWidth="100.0" />
+            <GridPane prefHeight="250.0" style="-fx-background-color: #FFFFFF;">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="120.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="訂購人">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label text="商家 / 電話" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label text="取餐時間" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderUserNameLabel" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderShopNameLabel" text="null&#10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <TextField fx:id="hour" prefHeight="20.0" prefWidth="70.0" promptText="00">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </TextField>
+                        <Label text=" : ">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="min" prefHeight="20.0" prefWidth="70.0" promptText="00">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <VBox prefHeight="35.0" prefWidth="100.0" />
+            <GridPane prefHeight="70.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/12.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../picture/15.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#backPageBtn" prefWidth="150.0" style="-fx-background-color: transparent;">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#checkBtn" prefWidth="150.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
