@@ -6,10 +6,10 @@
 
 |文件名稱|內容說明|連結|
 |--|--|--|
-|presentation.pdf|以簡報方式，快速說明整個專案的發想、系統設計、各項功能展示|[連結](presentation.pdf)|
-|report.pdf|以文件檔的形式，詳細說明整個專案的內容、系統設計、java doc、各項功能與交易程序等|[連結](report.pdf)|
-|System_operation_manual.pdf|以文件與圖片輔助說明的方式，類似Readme的內容，教使用者在本地端執行檔案，與所有系統功能操作手冊（分成各個使用者面向）|[連結](System_operation_manual.pdf)|
-|milestone.pdf|記錄所有每次跟老師開會時的簡報內容|[連結1](milestone1.pdf)[連結2](milestone2.pdf)|
+|presentation|以簡報方式，快速說明整個專案的發想、系統設計、各項功能展示|[連結](presentation.pdf)|
+|report|以文件檔的形式，詳細說明整個專案的內容、系統設計、java doc、各項功能與交易程序等|[連結](report.pdf)|
+|System_operation_manual|以文件與圖片輔助說明的方式，類似Readme的內容，教使用者在本地端執行檔案，與所有系統功能操作手冊（分成各個使用者面向）|[連結](System_operation_manual.pdf)|
+|milestone|記錄所有每次跟老師開會時的簡報內容|[連結1](milestone1.pdf)   [連結2](milestone2.pdf)|
 
 [![My Skills](https://skillicons.dev/icons?i=java,eclipse,mysql)](https://skillicons.dev)
 
